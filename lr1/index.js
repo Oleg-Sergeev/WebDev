@@ -190,6 +190,6 @@ for (let i = 0; i < arr2.length; i++) {
         max = arr2[i];
     }
 }
-
+require
 console.log(arr2);
 console.log(max);

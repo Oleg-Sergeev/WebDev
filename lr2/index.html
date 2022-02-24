@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <script src="slider.js"></script>
+  <body onload="showSlides()">
+    <h1>Сергеев Олег Павлович - Лабораторная работа №2</h1>
+
+    <div class="container">
+      <div class="slides">
+        <img src="images/img1.jpg" alt="pepe1"/>
+      </div>
+
+      <div class="slides">
+        <img src="images/img2.jpg" alt="pepe2"/>
+      </div>
+
+      <div class="slides">
+        <img src="images/img3.jpg" alt="pepe3"/>
+      </div>
+
+      <div id="prev" onclick="moveSlide(-1)">&#10094;</div>
+      <div id="next" onclick="moveSlide(1)">&#10095;</div>
+    </div>
+  </body>
+</html>
