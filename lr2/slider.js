@@ -1,4 +1,4 @@
-var slideIndex = 1;
+let slideIndex = 1;
 
 function moveSlide(n) {
   slideIndex += n;
@@ -6,10 +6,10 @@ function moveSlide(n) {
 }
 
 function showSlides() {
-  var slides = document.getElementsByClassName("slides");
+  const slides = document.getElementsByClassName("slides");
 
-  var prev = document.getElementById("prev");
-  var next = document.getElementById("next");
+  const prev = document.getElementById("prev");
+  const next = document.getElementById("next");
 
   if (slideIndex == 1) {
     prev.classList.add("hide");
