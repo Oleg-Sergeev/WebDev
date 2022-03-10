@@ -1,0 +1,68 @@
+.hide-scrollbar {
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+
+  max-width: 300px;
+
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+
+  
+  padding-top: 5px;
+  padding-right: 5px;
+  
+  flex-direction: column;
+  align-items: flex-end;
+
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.modal-active {
+  display: flex;
+  z-index: 20;
+}
+
+.modal-close {
+  cursor: pointer;
+}
+
+.background {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  z-index: 10;
+}
+
+.background-active {
+    display: initial;
+}
+
+
+fieldset {
+  margin: 10px;
+}
+
+input[type="submit"] {
+  margin-bottom: 10px;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
