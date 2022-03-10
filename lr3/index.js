@@ -7,21 +7,8 @@ function disableFormReload() {
 function validateInputs() {
   let form = document.getElementById("form_agreement");
 
-  form.addEventListener(
-    "focus",
-    (e) => {
-      e.target.style.background = "#80dfff";
-    },
-    true
-  );
-
-  form.addEventListener(
-    "blur",
-    (e) => {
-      e.target.style.background = "";
-    },
-    true
-  );
+  form.addEventListener("focus", e => e.target.style.background = "#80dfff", true);
+  form.addEventListener("focus", e => e.target.style.background = "", true);
 
   let tel = form["tel"];
   let email = form["email"];
@@ -35,7 +22,6 @@ function validateInputs() {
       e.target.style.background = "#ffd5a4";
     } else {
       e.target.setCustomValidity("");
-
       e.target.style.background = "";
     }
   });
@@ -52,7 +38,6 @@ function validateInputs() {
       e.target.style.background = "#ffd5a4";
     } else {
       e.target.setCustomValidity("");
-
       e.target.style.background = "";
     }
   });
